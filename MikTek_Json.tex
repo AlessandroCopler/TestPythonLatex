@@ -1,0 +1,190 @@
+\documentclass{article}
+\usepackage[left=2.8cm,top=0.5cm,right=2.8cm,bottom=0.5cm]{geometry}
+
+
+\usepackage{luacode}
+\renewcommand{\rmdefault}{phv}
+\renewcommand{\sfdefault}{phv}
+
+\usepackage{amsmath,amssymb}
+\usepackage[italian]{babel}
+
+\usepackage{setspace}
+\usepackage[utf8]{inputenc}
+\begin{document}
+
+\begin{luacode}
+function read(file)
+    local handler = io.open(file, "rb")
+    local content = handler:read("*all")
+    handler:close()
+    return content
+end
+
+JSON = (loadfile "JSON.lua")()
+local table = JSON:decode(read("recipes.json"))
+local table2 = JSON:decode(read("data.json"))
+
+\end{luacode}
+
+
+\begin{center}
+\LARGE{TRIBUNALE ORDINARIO DI} 
+\begin{luacode}
+ local table = JSON:decode(read("data.json"))   	  
+	  tex.print(table['ufficio']['distretto'])
+\end{luacode}
+\\
+\vspace*{0.5cm}
+\normalsize{PROCEDIMENTI SPECIALI SOMMARI}\\
+\vspace*{0.5cm}
+\LARGE{Nota di iscrizione a ruolo\\
+o\\
+Nota di accompagnamento}\\
+\end{center}
+
+%a=inizio del ciclo
+%b=fine del ciclo
+%c=step di incremento di a 
+
+%\begin{luacode}
+%a=1;b=3;c=1
+%for var=a,b,c do 
+%	local table = JSON:decode(read("recipes.json"))
+%	tex.print(table['recipe']['ingredients'][var]['item'])
+%end
+%\end{luacode}
+
+%\begin{luacode}
+% local i = 1
+% local table = JSON:decode(read("recipes.json"))
+%    while (table['recipe']['ingredients'][i]) do
+%	  tex.print(table['recipe']['ingredients'][i]['item'])
+%	  i = i + 1
+%    end
+%\end{luacode}
+
+Per ricorrente	
+\hspace{1.0cm}		
+$\text{\rlap{}}\square$
+Per reclamante\vspace{0.5cm}\\
+\linespread{1.5}{Si chiede l’iscrizione al \textbf{RUOLO GENERALE DEGLI AFFARI CIVILI - PROCEDIMENTI SPECIALI SOMMARI} della seguente causa introdotta con:}\vspace{0.5cm}\\
+$\text{\rlap{$\checkmark$}}\square$
+(0) Ricorso
+\hspace{1.5cm}		
+$\text{\rlap{}}\square$
+(0) Citazione 
+\hspace{1.5cm}	
+$\text{\rlap{}}\square$
+(7) Reclamo\vspace*{0.5cm}\\
+\tiny{\textbf{P}romosso da:}\\
+%\begin{luacode}
+% local i = 1
+% local table = JSON:decode(read("recipes.json"))
+%     while (table['recipe']['ingredients'][i]) do
+%	  if i==1 then     	  
+%	  tex.print(table['recipe']['ingredients'][i]['item'])
+%	  tex.print(",")
+%	  i=i+1
+%	  else 
+%	  if(table['recipe']['ingredients'][i+1]) then
+%	  		tex.print(table['recipe']['ingredients'][i]['item'])
+%	  		tex.print(",")
+%	  		i = i + 1
+%	  	else
+%	  		tex.print(table['recipe']['ingredients'][i]['item'])
+%	  		tex.print(".")
+%	  		i=i+1
+%	  	end
+%	  end
+%    end
+%\end{luacode} 
+\\
+\textbf{C}\tiny{on L'}\textbf{A}\tiny{vv.} 
+\begin{luacode}
+ local i = 1
+ local table = JSON:decode(read("data.json"))
+     while (table['attore'][1]['avvocato'][i]) do    	  
+	  tex.print(table['attore'][1]['avvocato'][i]['nome'])
+	  tex.print(",")
+	  i=i+1
+     end
+\end{luacode}
+\\
+\textbf{C}\tiny{\textbf{ONTRO}}
+%\begin{luacode}
+% local i = 1
+% local table = JSON:decode(read("recipes.json"))
+%    while (table['recipe']['ingredients'][i]) do
+%	  if i==1 then     	  
+%	  tex.print(table['recipe']['ingredients'][i]['item'])
+%	  tex.print(",")
+%	  i=i+1
+%	  else 
+%	  if(table['recipe']['ingredients'][i+1]) then
+%	  		tex.print(table['recipe']['ingredients'][i]['item'])
+%	  		tex.print(",")
+%	  		i = i + 1
+%	  	else
+%	  		tex.print(table['recipe']['ingredients'][i]['item'])
+%	  		tex.print(".")
+%	  		i=i+1
+%	  	end
+%	  end
+%    end
+%\end{luacode}
+\\
+\textbf{C}\tiny{on L'}\textbf{A}\tiny{vv.} \vspace*{1cm}
+%\begin{luacode}
+% local i = 1
+% local table = JSON:decode(read("recipes.json"))
+%     while (table['recipe']['ingredients'][i]) do
+%	  if i==1 then     	  
+%	  tex.print(table['recipe']['ingredients'][i]['item'])
+%	  tex.print(",")
+%	  i=i+1
+%	  else 
+%	  if(table['recipe']['ingredients'][i+1]) then
+%	  		tex.print(table['recipe']['ingredients'][i]['item'])
+%	  		tex.print(",")
+%	  		i = i + 1
+%	  	else
+%	  		tex.print(table['recipe']['ingredients'][i]['item'])
+%	  		tex.print(".")
+%	  		i=i+1
+%	  	end
+%	  end
+%    end
+%\end{luacode} 
+\\
+\normalsize$\text{\rlap{}}\square$ Valore della controversia\footnote{Il Valore e determinato ai sensi dell'art.9 Legge 23.12.1999 n. 488 }
+%\begin{luacode}
+%local table = JSON:decode(read("recipes.json"))
+%tex.print(table['recipe']['cal'])
+%\end{luacode}
+%\\
+Importo del contributo unificato\footnotemark[1]\footnote{Allegare ricevuta di versamento}
+%\begin{luacode}
+%local table = JSON:decode(read("recipes.json"))
+%tex.print(table['recipe']['cal'])
+%\end{luacode}
+\vspace{1cm} \\
+$\text{\rlap{}}\square$ Esenzione dal contributo unificato.\newpage
+Data di comparizione 
+%\begin{luacode}
+%local table = JSON:decode(read("recipes.json"))
+%tex.print(table['recipe']['protein'])
+%tex.print("  ")
+%
+%\end{luacode} 
+ Data di notifica 
+%\begin{luacode}
+%local table = JSON:decode(read("recipes.json"))
+%tex.print(table['recipe']['protein'])
+%tex.print("  ")
+%\end{luacode} 
+Oggetto e Codice  procedimento sommario \hrulefill  .....$ | $.....$ | $.....$ | $ \footnote{indicare oggetto e codice relativo tra quelli elencati in tabella}\\
+Oggetto e Codice domanda di merito \hrulefill .....$ | $.....$ | $.....$ | $\footnotemark[3] \\
+
+$\text{\rlap{}}\square$ prova
+\end{document}
