@@ -26,4 +26,4 @@ curl -X POST -d @test.xml http://clgenpy-buccaneers.rhcloud.com/compile
 COMPILATORI SUPPORTATI
 
 pdflatex -> genera pdf
-lualatex -> genera pdf con variabili in json
+
