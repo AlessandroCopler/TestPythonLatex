@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<compile>
+<token>prova</token>
+        <options>
+            <output-format>pdf</output-format>
+            <compiler>pdflatex</compiler>
+        </options>
+ <resources root-resource-path="prova.tex">
+         <resource path="prova.tex" encoding="utf-8" url="">
+	</resource>
+</resources>
+</compile>
