@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<compile>
+<token>prova</token>
+        <options>
+            <output-format>pdf</output-format>
+            <compiler>pdflatex</compiler>
+        </options>
+ <resources root-resource-path="MikTek_Json.tex">
+            <resource path="MikTek_Json.tex" encoding="base64" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/"/>
+</resources>
+</compile>
