@@ -5,8 +5,8 @@
             <output-format>pdf</output-format>
             <compiler>lualatex</compiler>
         </options>
- <resources root-resource-path="prova.tex">
-         <resource path="prova.tex" encoding="base64" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/prova.tex">
+ <resources root-resource-path="lua_test.tex">
+         <resource path="lua_test.tex" encoding="base64" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/lua_test.tex">
 	</resource>
 </resources>
 </compile>
