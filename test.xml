@@ -6,7 +6,7 @@
             <compiler>pdflatex</compiler>
         </options>
  <resources root-resource-path="prova.tex">
-         <resource path="prova.tex" encoding="base64" url="">
+         <resource path="prova.tex" encoding="base64" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/prova.tex">
 	</resource>
 </resources>
 </compile>
