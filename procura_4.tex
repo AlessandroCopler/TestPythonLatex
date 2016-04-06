@@ -4,9 +4,10 @@
 \renewcommand{\rmdefault}{phv}
 \renewcommand{\sfdefault}{phv}
 \usepackage{amsmath,amssymb}
-\usepackage[italian]{babel}
+
 \usepackage{setspace}
 \usepackage[utf8]{inputenc}
+\usepackage[italian]{babel}
 \begin{document}
 \begin{luacode}
 
@@ -17,7 +18,7 @@ function read(file)
     return content
 end
 JSON = (loadfile "JSON.lua")()
-local table = JSON:decode(read("data.json"))
+local table = JSON:decode(read("data2.json"))
 \end{luacode}
 
 
@@ -26,20 +27,20 @@ local table = JSON:decode(read("data.json"))
 \vspace*{0.3cm}\\
 Io sottoscritto 
 \begin{luacode}
- local table = JSON:decode(read("data.json"))   	  
-	  tex.print(table['attore'][1]['parte']['nome'])
+ local table = JSON:decode(read("data2.json"))   	  
+	  tex.print(table['soggetti'][2]['soggetto']['titolarePiva']['nome'])
 \end{luacode}
 ,
 \begin{luacode}
- local table = JSON:decode(read("data.json"))   	  
-	  tex.print(table['attore'][1]['parte']['cognome'])
+ local table = JSON:decode(read("data2.json"))   	  
+	  tex.print(table['soggetti'][2]['soggetto']['titolarePiva']['denominazione'])
 \end{luacode}
 , con C.F. 
 \begin{luacode}
- local table = JSON:decode(read("data.json"))   	  
-	  tex.print(table['attore'][1]['parte']['cf_pIVA'])
+ local table = JSON:decode(read("data2.json"))   	  
+	  tex.print(table['soggetti'][2]['soggetto']['identificativo'])
 \end{luacode}
-, nella mia qualita di legale rappresentante di CAMPO74, con sede legale in CAMPO74 e P.IVA CAMPO75 conferisco mandato, anche in via tra loro disgiunta, agli avv.ti Francesco Valeri e Riccardo Marini del Foro di Brescia a rappresentare e difendere la predetta societa nella procedura monitoria contro CAMPO194; CAMPO195, con C.F. CAMPO 198, in ogni stato e grado della procedura medesima, ivi inclusa la fase di eventuale opposizione e la fase di esecuzione forzata, conferendo agli stessi ogni piu ampio potere inerente la procura ivi incluso quello di conciliare e transigere la lite, incassare somme e rilasciare quietanze, disconoscere scritture private, presentare istanze di fallimento, farsi sostituire da altri professionisti, nominare consulenti di parte, dando sin d'ora per rato e valido il loro operato ed eleggendo domicilio speciale della societa CAMPO74 presso il loro studio in Brescia, c.so G. Matteotti, 54.\\
+, nella mia qualit\`a di legale rappresentante di CAMPO74, con sede legale in CAMPO74 e P.IVA CAMPO75 conferisco mandato, anche in via tra loro disgiunta, agli avv.ti Francesco Valeri e Riccardo Marini del Foro di Brescia a rappresentare e difendere la predetta societ\`a nella procedura monitoria contro CAMPO194; CAMPO195, con C.F. CAMPO 198, in ogni stato e grado della procedura medesima, ivi inclusa la fase di eventuale opposizione e la fase di esecuzione forzata, conferendo agli stessi ogni pi\`u ampio potere inerente la procura ivi incluso quello di conciliare e transigere la lite, incassare somme e rilasciare quietanze, disconoscere scritture private, presentare istanze di fallimento, farsi sostituire da altri professionisti, nominare consulenti di parte, dando sin d'ora per rato e valido il loro operato ed eleggendo domicilio speciale della societa CAMPO74 presso il loro studio in Brescia, c.so G. Matteotti, 54.\\
 \vspace*{0.3cm}\\
 In fede\\
 \vspace*{0.3cm}\\
