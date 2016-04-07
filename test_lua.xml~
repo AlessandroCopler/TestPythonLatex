@@ -6,11 +6,11 @@
             <compiler>lualatex</compiler>
         </options>
  <resources root-resource-path="lua_test.tex">
-         <resource path="lua_test.tex" encoding="base64" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/lua_test.tex">
+         <resource path="procura_4.tex" encoding="base64" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/procura_4.tex">
 	</resource>
 	<resource path="JSON.lua" encoding="file" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/JSON.lua">
 	</resource>
-	<resource path="data2.json" encoding="json" url="http://avcloud3alpha-buccaneers.rhcloud.com/service/proc?id=0">
+	<resource path="data2.json" encoding="json" url="http://avcloud3alpha-buccaneers.rhcloud.com/service/proc?id=1">
 	</resource>
 </resources>
 <decree key="data_decreto">
