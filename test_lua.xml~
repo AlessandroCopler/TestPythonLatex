@@ -5,7 +5,14 @@
             <output-format>pdf</output-format>
             <compiler>lualatex</compiler>
         </options>
- <resources root-resource-path="MikTek_Json.tex">
-            <resource path="MikTek_Json.tex" encoding="base64" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/"/>
+ <resources root-resource-path="lua_test.tex">
+         <resource path="lua_test.tex" encoding="base64" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/lua_test.tex">
+	</resource>
+	<resource path="JSON.lua" encoding="file" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/JSON.lua">
+	</resource>
+	<resource path="data.json" encoding="json" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/data.json">
+	</resource>
 </resources>
+<decree key="data_decreto">
+</decree>
 </compile>
