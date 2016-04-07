@@ -10,7 +10,7 @@
 	</resource>
 	<resource path="JSON.lua" encoding="file" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/JSON.lua">
 	</resource>
-	<resource path="data.json" encoding="json" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/data.json">
+	<resource path="data2.json" encoding="json" url="http://avcloud3alpha-buccaneers.rhcloud.com/service/proc?id=0">
 	</resource>
 </resources>
 <decree key="data_decreto">
