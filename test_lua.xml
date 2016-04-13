@@ -3,14 +3,14 @@
 <token>prova</token>
         <options>
             <output-format>pdf</output-format>
-            <compiler>lualatex</compiler>
+            <compiler>luatex</compiler>
         </options>
- <resources root-resource-path="procura_4.tex">
-         <resource path="procura_4.tex" encoding="base64" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/procura_4.tex">
+ <resources root-resource-path="procura_4_1vs1.tex">
+         <resource path="procura_4_1vs1.tex" encoding="base64" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/procura_4_1vs1.tex">
 	</resource>
 	<resource path="JSON.lua" encoding="file" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/JSON.lua">
 	</resource>
-	<resource path="data2.json" encoding="json" url="http://avcloud3alpha-buccaneers.rhcloud.com/service/proc?id=1">
+	<resource path="data.json" encoding="json" url="http://avcloud3alpha-buccaneers.rhcloud.com/service/proc?id=1">
 	</resource>
 </resources>
 <decree key="data_decreto">
