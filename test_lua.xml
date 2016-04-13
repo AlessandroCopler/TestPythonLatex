@@ -3,7 +3,7 @@
 <token>prova</token>
         <options>
             <output-format>pdf</output-format>
-            <compiler>luatex</compiler>
+            <compiler>lualatex</compiler>
         </options>
  <resources root-resource-path="procura_4_1vs1.tex">
          <resource path="procura_4_1vs1.tex" encoding="base64" url="https://raw.githubusercontent.com/AlessandroCopler/TestPythonLatex/master/procura_4_1vs1.tex">
